@@ -39,17 +39,13 @@ export default function Home() {
            setDownloads(response.data.downloads);
            setLicense(response.data.license);
            setVersion(response.data.version);
-           console.log(response.data.totaldata)
     }
-   
    }catch(err){
-    console.log(err)
+    setDownloads("Not found");
    }
    setLoading(false);
   }
 
-
-  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
     <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md">
