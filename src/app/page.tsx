@@ -42,6 +42,7 @@ export default function Home() {
     }
    }catch(err){
     setDownloads("Not found");
+    console.log(err);
    }
    setLoading(false);
   }
